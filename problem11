@@ -1,0 +1,28 @@
+//WA simple program without for and array    that accepts the marks of 5 subjects and finds the sum and percentage marks obtained by the student.
+#include <stdio.h>
+
+int main() {
+    float sub1, sub2, sub3, sub4, sub5, sum, percentage;
+
+    // Accepting marks for 5 subjects
+    printf("Enter marks for subject 1: ");
+    scanf("%f", &sub1);
+    printf("Enter marks for subject 2: ");
+    scanf("%f", &sub2);
+    printf("Enter marks for subject 3: ");
+    scanf("%f", &sub3);
+    printf("Enter marks for subject 4: ");
+    scanf("%f", &sub4);
+    printf("Enter marks for subject 5: ");
+    scanf("%f", &sub5);
+
+    // Calculating sum and percentage
+    sum = sub1 + sub2 + sub3 + sub4 + sub5;
+    percentage = (sum / 500) * 100;
+
+    // Displaying the results
+    printf("Total marks obtained: %.2f\n", sum);
+    printf("Percentage: %.2f%%\n", percentage);
+
+    return 0;
+}
